@@ -1,0 +1,92 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2 {
+    color: #0056b3;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 40px); /* 4 columns */
+    grid-template-rows: repeat(4, 40px);    /* 4 rows */
+    gap: 5px;
+    margin-bottom: 20px;
+    justify-content: center; /* Center the grid horizontally */
+    width: fit-content; /* Make container only as wide as needed */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-input {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.status-message {
+    text-align: center;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.loading {
+    color: #ffa500; /* Orange */
+}
+
+.error {
+    color: #dc3545; /* Red */
+}
+
+.success {
+    color: #28a745; /* Green */
+}
+
+
+#results {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 10px;
+    min-height: 100px;
+    white-space: pre-wrap; /* Preserve whitespace and wrap lines */
+    font-family: monospace;
+}
+
+#results p {
+    margin: 5px 0;
+}
+
+#results span {
+    font-weight: bold;
+}
